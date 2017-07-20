@@ -1,27 +1,93 @@
 ﻿using Android.App;
 using Android.Widget;
 using Android.OS;
+using Android.Support.V7.App;
+using Android.Support.Design.Widget;
+using Toolbar = Android.Support.V7.Widget.Toolbar;
+using Android.Support.V7.Widget;
+using HUMobile.Resources;
+using Android.Views;
+using System.Security.Cryptography.X509Certificates;
 
 namespace HUMobile
 {
-    [Activity(Label = "HUMobile", MainLauncher = true, Icon = "@mipmap/icon")]
+    [Activity(Label = "HUMobile", MainLauncher = true)]
     public class MainActivity : Activity
     {
-        int count = 1;
-
+        ImageButton cvPlanta, cvOem, cvCons, cvProg;
         protected override void OnCreate(Bundle savedInstanceState)
         {
             base.OnCreate(savedInstanceState);
-
-            // Set our view from the "main" layout resource
             SetContentView(Resource.Layout.Main);
 
-            // Get our button from the layout resource,
-            // and attach an event to it
-            Button button = FindViewById<Button>(Resource.Id.myButton);
+            cvPlanta = this.FindViewById<ImageButton>(Resource.Id.cvPlanta);
+            cvOem = this.FindViewById<ImageButton>(Resource.Id.cvOem);
+            cvCons = this.FindViewById<ImageButton>(Resource.Id.cvCons);
+            cvProg = this.FindViewById<ImageButton>(Resource.Id.cvProg);
 
-            button.Click += delegate { button.Text = $"{count++} clicks!"; };
+
+
+            cvPlanta.Click += (sender, e) =>  {
+				var ActivityIntent =
+						new Android.Content.Intent(this, typeof(ActivityPlanta));
+				StartActivity(ActivityIntent);
+            };
+
+            cvOem.Click += (sender, e) => 
+            {
+                
+            };
+
+            cvCons.Click += (sender, e) => 
+            {
+                
+            };
+
+            cvProg.Click += (sender, e) => 
+            {
+                
+            };
+
         }
+
+
+		protected override void OnSaveInstanceState(Bundle outState)
+		{
+			base.OnSaveInstanceState(outState);
+		}
+
+		protected override void OnStart()
+		{
+			base.OnStart();
+		}
+
+		protected override void OnResume()
+		{
+			base.OnResume();
+		}
+
+		protected override void OnPause()
+		{
+			base.OnPause();
+		}
+
+		protected override void OnStop()
+		{
+			base.OnStop();
+		}
+
+		protected override void OnDestroy()
+		{
+			base.OnDestroy();
+		}
+
+		protected override void OnRestart()
+		{
+			base.OnRestart();
+		}
+
+
     }
+
 }
 

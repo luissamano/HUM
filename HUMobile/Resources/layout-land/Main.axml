@@ -23,7 +23,7 @@
         android:layout_height="wrap_content"
         android:id="@+id/scrollView1">
         <LinearLayout
-            android:orientation="horizontal"
+            android:orientation="vertical"
             android:minWidth="25px"
             android:minHeight="25px"
             android:layout_width="match_parent"
@@ -44,12 +44,52 @@
                     android:orientation="vertical"
                     android:padding="8dp"
                     android:id="@+id/linearLayout5">
-                    <ImageView
+                    <ImageButton
+                        android:layout_gravity="center"
                         android:layout_width="fill_parent"
                         android:layout_height="190dp"
                         android:id="@+id/imageView"
-                        android:background="@drawable/oem"
-                        android:scaleType="centerCrop" />
+                        android:background="@android:color/transparent"
+                        android:src="@drawable/location"
+                        android:layout_marginLeft="0.0dp"
+                        android:layout_marginRight="0.0dp" />
+                    <TextView
+                        android:layout_width="fill_parent"
+                        android:layout_height="wrap_content"
+                        android:textAppearance="?android:attr/textAppearanceMedium"
+                        android:textColor="#333333"
+                        android:text="@string/Loc"
+                        android:id="@+id/textView"
+                        android:layout_gravity="center_horizontal"
+                        android:layout_marginTop="8dp"
+                        android:layout_marginLeft="5dp"
+                        android:fontFamily="@string/abc_action_bar_up_description" />
+                </LinearLayout>
+            </android.support.v7.widget.CardView>
+            <android.support.v7.widget.CardView
+                android:layout_marginTop="10dp"
+                android:layout_width="fill_parent"
+                android:layout_height="245dp"
+                android:layout_gravity="center_horizontal"
+                cardview:cardElevation="4dp"
+                cardview:cardCornerRadius="5dp"
+                android:minWidth="25px"
+                android:minHeight="25px">
+                <LinearLayout
+                    android:layout_width="fill_parent"
+                    android:layout_height="240dp"
+                    android:orientation="vertical"
+                    android:padding="8dp"
+                    android:id="@+id/linearLayout5">
+                    <ImageButton
+                        android:layout_width="fill_parent"
+                        android:layout_height="190dp"
+                        android:id="@+id/imageView"
+                        android:src="@drawable/oem"
+                        android:background="@android:color/transparent"
+                        android:scaleType="centerCrop"
+                        android:layout_marginLeft="0.0dp"
+                        android:layout_marginRight="0.0dp" />
                     <TextView
                         android:layout_width="fill_parent"
                         android:layout_height="wrap_content"
@@ -78,11 +118,12 @@
                     android:orientation="vertical"
                     android:padding="8dp"
                     android:id="@+id/linearLayout3">
-                    <ImageView
+                    <ImageButton
                         android:layout_width="fill_parent"
                         android:layout_height="190dp"
                         android:id="@+id/imageView"
-                        android:background="@drawable/meca"
+                        android:background="@android:color/transparent"
+                        android:src="@drawable/meca"
                         android:scaleType="centerCrop" />
                     <TextView
                         android:layout_width="fill_parent"
@@ -112,7 +153,8 @@
                         android:layout_width="fill_parent"
                         android:layout_height="190dp"
                         android:id="@+id/imageView"
-                        android:background="@drawable/progs"
+                        android:background="@android:color/transparent"
+                        android:src="@drawable/progs"
                         android:scaleType="centerCrop" />
                     <TextView
                         android:layout_width="fill_parent"

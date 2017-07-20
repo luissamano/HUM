@@ -13,6 +13,5 @@
         android:theme="@style/ThemeOverlay.AppCompat.Dark.ActionBar"
         app:popupTheme="@style/ThemeOverlay.AppCompat.Light"
         app:layout_scrollFlags="scroll|enterAlways"
-        app:navigationIcon="@drawable/logoo"
         android:pointerIcon="grab" />
 </LinearLayout>

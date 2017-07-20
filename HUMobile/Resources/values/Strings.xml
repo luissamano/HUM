@@ -1,5 +1,20 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
 <resources>
-	<string name="hello">Hello World, Click Me!</string>
+	
 	<string name="app_name">HUMobile</string>
+	<string name="ApplicationName">HUMobile</string>
+
+	<string name="Loc">Planta</string>
+	<string name="Oem">Armadora</string>
+	<string name="Cons">Construccón</string>
+    <string name="Prog">Programa</string>
+
+    <string name="title">Elige una planta</string>
+    <string-array name="planta_array">
+        <item>Leon</item>
+        <item>Nuevo ladero</item>
+        <item>Saltillo</item>
+    </string-array>
+
+	
 </resources>
